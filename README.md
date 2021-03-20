@@ -44,7 +44,7 @@ The main challenges I encountered were with adding the sign in and log out funct
 
 ## License
 
-    Copyright [2020] [name of copyright owner]
+    Copyright [2020] [CodePath]
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
