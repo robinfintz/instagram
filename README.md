@@ -1,23 +1,30 @@
-# Project 3 - *Insta*
+# Project 3 - *Photostagram*
 
-**Insta* is a photo sharing app similar to Instagram but using Parse as its backend.
+**Photostagram** is a photo sharing app similar to Instagram but using Parse as its backend.
 
-Time spent: **5** hours spent in total
+Time spent: **10** hours spent in total
 
 ## User Stories
 
 The following **required** functionality is completed:
 
-- [x] User can sign up to create a new account using Parse authentication.
-- [x] User can log in and log out of his or her account.
-- [x] The current signed in user is persisted across app restarts.
-- [x] User can take a photo, add a caption, and post it to "Instagram".
+- [x] User can view the last 20 posts submitted to "Instagram".
+- [x] The user should switch between different tabs - viewing all posts (feed view), compose (capture photos form camera) and profile tabs (posts made) using fragments and a Bottom Navigation View. (2 points)
+- [x] User can pull to refresh the last 20 posts submitted to "Instagram".
 
 The following **optional** features are implemented:
 
 - [ ] User sees app icon in home screen and styled bottom navigation view
 - [ ] Style the feed to look like the real Instagram feed.
-- [ ] After the user submits a new post, show an indeterminate progress bar while the post is being uploaded to Parse.
+- [ ] User can load more posts once he or she reaches the bottom of the feed using infinite scrolling.
+- [ ] Show the username and creation time for each post.
+- [ ] User can tap a post to view post details, including timestamp and caption.
+- [ ] User Profiles
+      - [ ] Allow the logged in user to add a profile photo
+      - [ ] Display the profile photo with each post
+      - [ ] Tapping on a post's username or profile photo goes to that user's profile page and shows a grid view of the user's posts 
+- [ ] User can comment on a post and see all comments for each post in the post details screen.
+- [ ] User can like a post and see number of likes for each post in the post details screen.
 
 The following **additional** features are implemented:
 
@@ -27,7 +34,7 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='https://media.giphy.com/media/DPA37IV32ZhwpcV4bE/giphy.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://media.giphy.com/media/5Qtgg2R7b5RcKJtMJG/giphy.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
@@ -35,7 +42,7 @@ GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 Describe any challenges encountered while building the app.
 
-The main challenges I encountered were with adding the sign in and log out functionality. It for sure took a bit of research, but I believe it works now. Fun project!
+My main challenges were with creating the fragments and properly containing them within the main activity. I also struggled with creating the the "swipe to refresh" functionality.
 
 ## Open-source libraries used
 
@@ -44,7 +51,7 @@ The main challenges I encountered were with adding the sign in and log out funct
 
 ## License
 
-    Copyright [2020] [name of copyright owner]
+    Copyright [2021] [CodePath]
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
